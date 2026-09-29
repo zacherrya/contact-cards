@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="color-scheme" content="light">
+<title>Pooja Talati — Vishwa Design Collab</title>
+<meta name="description" content="Contact card for Pooja Talati, Lead Architect & Universal Design Consultant, Vishwa Design Collab.">
+<link rel="apple-touch-icon" href="photo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --navy:#27306B; --navy-deep:#1B2150; --gold:#DC972B; --gold-lt:#FCC76C;
+    --silver:#A4A5A7; --paper:#FFFFFF; --wash:#EEF0F5; --ink:#1C1F2E;
+  }
+  *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+  html,body{margin:0;padding:0}
+  body{
+    background:var(--wash);
+    font-family:"Montserrat",-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink);
+    display:flex; justify-content:center;
+    padding:24px 16px calc(28px + env(safe-area-inset-bottom));
+    min-height:100vh;
+  }
+  .card{
+    width:100%; max-width:400px; background:var(--paper);
+    border-radius:20px; overflow:hidden;
+    box-shadow:0 1px 2px rgba(28,31,46,.06), 0 12px 32px rgba(28,31,46,.12);
+  }
+  .hero{
+    background:linear-gradient(165deg,var(--navy) 0%,var(--navy-deep) 100%);
+    height:100px; position:relative;
+  }
+  .hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:3px;background:var(--gold)}
+  .avatar{
+    width:132px;height:132px;border-radius:50%;display:block;margin:-72px auto 0;
+    position:relative; z-index:2;          /* .hero is positioned, so it would paint over this */
+    object-fit:cover;border:5px solid var(--paper);background:#fff;outline:1px solid #E3E6EF;
+    box-shadow:0 6px 20px rgba(28,31,46,.22);
+  }
+  .who{text-align:center;padding:16px 24px 4px}
+  h1{font-size:23px;line-height:1.15;font-weight:700;letter-spacing:.2px;color:var(--navy);margin:0}
+  .role{
+    margin:9px 0 0;font-size:10.5px;font-weight:600;letter-spacing:.20em;
+    text-transform:uppercase;color:var(--gold);line-height:1.6;
+  }
+  .org{margin:10px 0 0;font-size:13.5px;font-weight:500;color:#5A5F76}
+  .actions{padding:20px 24px 4px}
+  .save{
+    display:flex;align-items:center;justify-content:center;gap:9px;
+    width:100%;padding:15px 18px;border-radius:12px;border:0;
+    background:var(--gold);color:#2A1C00;
+    font:inherit;font-size:15px;font-weight:700;letter-spacing:.2px;
+    text-decoration:none;cursor:pointer;
+    box-shadow:0 4px 12px rgba(220,151,43,.26);
+  }
+  .save:active{transform:translateY(1px)}
+  .save svg{width:18px;height:18px;flex:none}
+  .rows{padding:18px 24px 4px;display:grid;gap:10px}
+  .row{
+    display:flex;align-items:center;gap:13px;
+    padding:13px 15px;border:1px solid #E3E6EF;border-radius:12px;
+    text-decoration:none;color:inherit;background:#FCFCFE;
+  }
+  .row:active{background:#F4F6FB}
+  .ic{
+    width:34px;height:34px;flex:none;border-radius:9px;background:rgba(39,48,107,.07);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .ic svg{width:17px;height:17px;stroke:var(--navy)}
+  .row .lbl{font-size:9.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:#8B90A6}
+  .row .val{font-size:14px;font-weight:500;color:var(--navy);overflow-wrap:break-word;line-height:1.3}
+  .row.mail .val{font-size:12.5px;letter-spacing:-.1px}
+  .foot{padding:24px 24px 26px;text-align:center}
+  .foot img{width:172px;height:auto;display:block;margin:0 auto;opacity:.95}
+  .hint{margin:16px 0 0;font-size:11px;color:#9AA0B4;letter-spacing:.02em}
+  @media (max-width:360px){ h1{font-size:21px} .avatar{width:116px;height:116px;margin-top:-64px} }
+</style>
+</head>
+<body>
+  <main class="card">
+    <div class="hero"></div>
+    <img class="avatar" src="photo.jpg" alt="Pooja Talati">
+    <div class="who">
+      <h1>Pooja Talati</h1>
+      <p class="role">Lead Architect &amp;<br>Universal Design Consultant</p>
+      <p class="org">Vishwa Design Collab</p>
+    </div>
+
+    <div class="actions">
+      <a class="save" href="pooja.vcf" download="Pooja-Talati.vcf">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M12 3v12"/><path d="m7 11 5 5 5-5"/><path d="M5 20h14"/>
+        </svg>
+        Save contact
+      </a>
+    </div>
+
+    <div class="rows">
+      <a class="row" href="tel:+919722036787">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg></span>
+        <span><span class="lbl">Phone</span><br><span class="val">+91 97220 36787</span></span>
+      </a>
+      <a class="row mail" href="mailto:design@vishwadesigncollab.com">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2.5"/><path d="m2.5 6.5 9.5 7 9.5-7"/></svg></span>
+        <span><span class="lbl">Email</span><br><span class="val">design@vishwadesigncollab.com</span></span>
+      </a>
+    </div>
+
+    <div class="foot">
+      <img src="logo.png" alt="Vishwa Design Collab — Designing for all">
+      <p class="hint">Tap Save contact to add Pooja, with her photo, to your phone.</p>
+    </div>
+  </main>
+</body>
+</html>
